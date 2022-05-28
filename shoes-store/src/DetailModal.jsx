@@ -15,22 +15,11 @@ function DetailModal(props) {
                     <img src={product.image} alt={product.name} className="card-img" width="100%" height="300px" />
                     <div>
                         <h5>Product Details</h5>
-                        <table className="table">
-                            <tbody>
-                                <tr>
-                                    <td>Price: ${product.price}</td>
-                                </tr>
-                                <tr>
-                                    <td>Description: {product.description}</td>
-                                </tr>
-                                <tr>
-                                    <td>Short Description: {product.shortDescription}</td>
-                                </tr>
-                                <tr>
-                                    <td>Quantity: {product.quantity}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <p className="card-text"><span style={{fontWeight: "bold"}}>Price: </span><span style={{color:"red"}}>${product.price}</span></p>
+                        <p className="card-text"><span style={{fontWeight: "bold"}}>Short Description: </span> {product.shortDescription}</p>
+                        <p className="card-text"><span style={{fontWeight: "bold"}}>Description: </span>{product.description}</p>
+                        <p className="card-text"><span style={{fontWeight: "bold"}}>Quantity: </span>{product.quantity}</p>
+
                     </div> 
                 </div>
             </Modal.Body>
